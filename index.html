@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
+    <meta name="description" content="Guessing game has the user to guess a number between 1-100.">
+    <meta name="author" content="Kate McDonald">
     <title>Guessing Game</title>
-
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="cover.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" scr="normalize.css">
+    <link rel="stylesheet" href="cover.css">
+    <link rel="icon" href="https://cdn.skilledup.com/wp-content/uploads/2015/02/FullStack-Academy-Hackathon-Feature_1290x688_MS4.jpg">
 
   </head>
   <body>
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-
           <div class="masthead clearfix">
             <div class="inner">
               <div id='image'>
@@ -28,26 +27,23 @@
               </div>
             </div>
           </div>
-
           <div class="inner cover">
           <div class="row">
         <div class="col-lg-6">
           <div class="input-group">
-            <h1 id='guess'>Guess The Number</h1>
-            <h4> Please enter a number between 1 - 100 </h4>
+            <h1 id='guess'>Kate's Guessing Game</h1>
+            <h4>Enter a number between 1 - 100</h4>
             <!-- <p class="lead"></p> -->
            <!-- <label for="playerGuess">Guess Here</label> -->
            <div class='main-box'>
-             <input type="text" id='playersGuess' placeholder='Enter Number 1-100' class='form-control input' onkeydown="if (event.keyCode ===13) doesNumberToGuessExist()" />
+             <input type="text" id='playersGuess' placeholder='' class='form-control input' onkeydown="if (event.keyCode ===13) doesNumberToGuessExist()" />
              <h3 id='status'></h3>
-             <button type='button' id='playersGuess' onclick='doesNumberToGuessExist()' class="btn btn-lg btn-info">Submit</button>
            </div>
            <div class='buttons'>
-             <button type='button'id='playersGuess' onclick='playAgain()' class="btn btn-lg btn-default">Play Again</button>
-             <button type='button' id='playersGuess' onclick='hint()' class= 'btn btn-lg btn-default'>I give up</button>
+             <button type='button'id='playersGuess' onclick='playAgain()' class="btn btn-default">Play Again</button>
+             <button type='button' id='playersGuess' onclick='hint()' class= 'btn btn-default'>I give up</button>
            </div>
-           <h3 id='guess-count'> 5 Guesses Remaining </h3>
-
+           <h5 id='guess-count'> 5 Guesses Remaining </h5>
       </div>
     </div>
 
@@ -56,6 +52,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src='guess.js'></script>
+    <script src='guessingGame.js'></script>
   </body>
 </html>
